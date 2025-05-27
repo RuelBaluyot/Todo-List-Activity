@@ -219,7 +219,6 @@ body {
   background: #f8f9fa; 
   border-radius: 8px;
 }
-/* Inside your existing styles, update the span inside the list items */
 
 .todos span {
   flex: 1;
@@ -227,8 +226,8 @@ body {
   transition: color 0.2s ease, text-decoration 0.2s ease;
   
   /* Make the text wrap within its container */
-  word-break: break-word; /* Breaks long words if needed */
-  word-wrap: break-word;  /* For older browsers */
-  hyphens: auto;          /* Enable hyphenation for nicer breaks (if supported) */
-  min-width: 0;           /* Fix for flexbox overflow issues in some browsers */
+  word-break: break-word; 
+  word-wrap: break-word;  
+  hyphens: auto;         
+  min-width: 0;          
 }
