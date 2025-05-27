@@ -54,7 +54,6 @@ body {
   box-sizing: border-box;
 }
 
-
 /* Todo List Styles */
 .todo-list {
   padding: 2rem;
@@ -219,4 +218,17 @@ body {
   font-style: italic;
   background: #f8f9fa; 
   border-radius: 8px;
+}
+/* Inside your existing styles, update the span inside the list items */
+
+.todos span {
+  flex: 1;
+  font-size: 1rem;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+  
+  /* Make the text wrap within its container */
+  word-break: break-word; /* Breaks long words if needed */
+  word-wrap: break-word;  /* For older browsers */
+  hyphens: auto;          /* Enable hyphenation for nicer breaks (if supported) */
+  min-width: 0;           /* Fix for flexbox overflow issues in some browsers */
 }
